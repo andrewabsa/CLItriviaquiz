@@ -6,3 +6,32 @@ Trivia Quiz is designed as a fun application to test the user's general knowledg
 Trivia Quiz can be played in 3 game modes; Easy, Medium and Hard. Each with increasing difficult. Once a quiz has been completed, users get see their final score in a leaderboard, where they will be prompted to enter their name so the score can be allocated to said name. 
 
 A bonus "time trial" quiz is available to play aswell. User's will see how fast they can solve math problems under a timer. Once again final score and name will be displayed in leaderboard.
+
+## Main Features
+### Quiz categories
+**Multiple choice**
+(MCQ) will prompt the user to respond to questions with four possible answers : (a,b,c,d)
+Program will throw an error if it receives any other input that is not a,b,c,d.
+E.g. "Sorry that was not one of the options. Please try again." 
+
+**Game modes:** Choose from **Easy**, **Medium**, and **Hard**. 
+Each game mode has unique questions and answers. 
+
+**Short answer**
+Short answer questions will only allow the user to answer in a specific word/term.
+Hints will be provided if the user surpasses a certain number of attempts.
+User must answer short answer questions with a string, the program will throw an error if it receives any other data type as input
+
+**True or False**
+True of False questions will prompt user to enter the answer as "T" for true or "F" for false.
+Error handling will be implemented when user enters an answer that is not "T" or "F".
+
+**Leaderboard**
+ will store user's name and final score into a table where score data will be saved.
+
+**Main Menu**
+will contain instructions on how to play the quiz. And will include a prompt where the user will be able to input their desired name.
+
+A Bonus **Time Trial** Quiz will be timed and tests how fast the user can complete the quiz.
+The bonus quiz will contain a mix of all the styles of questions
+Each speed run attempt will submit final time into the leaderboard with users name
