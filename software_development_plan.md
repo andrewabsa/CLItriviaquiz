@@ -35,3 +35,12 @@ will contain instructions on how to play the quiz. And will include a prompt whe
 A Bonus **Time Trial** Quiz will be timed and tests how fast the user can complete the quiz.
 The bonus quiz will contain a mix of all the styles of questions
 Each speed run attempt will submit final time into the leaderboard with users name
+
+## Intended User Interaction & Experience
+The quiz application is intended to be used as program to test your knowledge.
+
+The **leaderboard** feature can be accessed by users from the main menu and can also be seen on completion of a quiz. The leaderboard will store the user's data (name and score) and save it to the leaderboard.
+
+The **short answer** option allows the user to have a choice between the type of quiz they want to play. There will be an option to choose between quizes in the main start up page.
+
+There will be a bonus **time trial** quiz available upon successful completion of the short answer quiz and the MPC quiz. The time trial quiz will only be visible to the user once they answer all questions correctly in the two previous quizzes.
