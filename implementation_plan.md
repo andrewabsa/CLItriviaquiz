@@ -2,7 +2,7 @@
 
 My implementation thought process was to tackle the more difficult and time consuming parts with the most priority and then work from there.
 
-The table has steps that are prioritised 1-3, 1 being top priority and 5 being not so prioritised.
+The table has steps that are prioritised 1-5, 1 being top priority and 5 being not so prioritised.
 
 Steps with 1 & 2 priority level, have the deadline of being completed in the next 3 days. Priority levels 3 & 4 must be completed before Friday. Priority level 5 will only be added if there is enough time. 
 
