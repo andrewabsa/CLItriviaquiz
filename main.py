@@ -67,11 +67,11 @@ else:
     print("\n")
 
 if score <= 0:
-    print("Easy Quiz: Final Score:", score, "- You need more practice")
+    print("Current Score:", score, "- You need more practice")
 elif score >= 200:
-    print("Easy Quiz: Final Score:", score, "- Not bad")
+    print("Current Score:", score, "- Not bad")
 else: 
-    print("Easy Quiz: Final Score:", score, "- You are the best!")
+    print("Current Score:", score, "- You are the best!")
 
 
 
@@ -79,7 +79,7 @@ else:
 #start of medium quiz (welcome message maybe?)
 
 # Medium Quiz
-answer1_2 = input("True or False? There are 86400 seconds in a day. \na. True \b. False \nAnswer: ")
+answer1_2 = input("True or False? There are 86400 seconds in a day. \na. True \nb. False \nAnswer: ")
 if answer1_2 == "True" or answer1_2 == "a" or answer1_2 == "true":
     score += 100
     print("Correct!")
@@ -161,7 +161,7 @@ else:
     print("Score: ", score)
     print("\n")
 
-answer2_3 = input("If you planted the seeds of Quercus robur what would grow? \na. Trees \nb. Fungi \nc. Tomatoes \d. Lemons \nAnswer: ")
+answer2_3 = input("If you planted the seeds of Quercus robur what would grow? \na. Trees \nb. Fungi \nc. Tomatoes \nd. Lemons \nAnswer: ")
 if answer2_3 == "a" or answer2_3 == "Trees" or answer2_3 == "trees":
     score += 100
     print("Correct!")
@@ -210,4 +210,135 @@ else:
     print("\n")
 
 
+if score <= 0:
+    print("Current Score: ", score, "- Don't quit your day job")
+elif score >= 200:
+    print("Current Score: ", score, "- Meh")
+else: 
+    print("Current Score", score, "- You rock!")
 
+# end of hard quiz
+
+
+
+#Time trial quiz(math calculations)
+
+ans1 = input("1. 8 + 12 = ")
+if ans1 == "20":
+    score += 50
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 50
+    print("Incorrect! The answer was 20")
+    print("Score: ", score)
+    print("\n")
+
+ans2 = input("2. 20 * 4 = ")
+if ans2 == "80":
+    score += 50
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 50
+    print("Incorrect! The answer was 80")
+    print("Score: ", score)
+    print("\n")
+
+ans3 = input("3. 6 + 7 = ")
+if ans3 == "13":
+    score += 50
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 50
+    print("Incorrect! The answer was 13")
+    print("Score: ", score)
+    print("\n")
+
+ans4 = input("4. 14 / 2 = ")
+if ans4 == "7":
+    score += 50
+    print("Correct!")
+    print("Score:", score)
+    print("\n")
+else:
+    score -= 50
+    print("Incorrect! The answer was 7")
+    print("Score: ", score)
+    print("\n")
+
+ans5 = input("5. 24 + 9 = ")
+if ans5 == "33":
+    score += 50
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 50
+    print("Incorrect! The answer was 33")
+    print("Score: ", score)
+    print("\n")
+
+ans6 = input("120-21 = ")
+if ans6 == "99":
+    score += 50 
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 50
+    print("Incorrect! The answer was 99")
+    print("Score: ", score)
+    print("\n")
+
+ans7 = input("18 + 32 = ")
+if ans7 == 50:
+    score += 50
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 50
+    print("Incorrect! The answer was 50")
+    print("Score: ", score)
+    print("\n")
+
+ans8 = input("22 + 10 = ")
+if ans8 == "32":
+    score += 50 
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else: 
+    score -= 50
+    print("Incorrect! The answer was 32")
+    print("Score: ", score)
+    print("\n")
+
+ans9 = input("30 + 40 = ")
+if ans9 == "70":
+    score += 50
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 50
+    print("Incorrect! The answer was 70")
+    print("Score: ", score)
+    print("\n")
+
+ans10 = input("90 / 30")
+if ans10 == "3":
+    score += 50
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 50
+    print("Incorrect! The answer was 3")
+    print("Score: ", score)
+    print("\n")
