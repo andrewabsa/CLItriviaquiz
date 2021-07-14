@@ -135,7 +135,7 @@ if answer5_2 == "a" or  answer5_2 == "fruit" or answer5_2 == "Fruit":
     print("\n")
 else:
     score -= 100
-    print("Incorrect! The answer is fruit")
+    print("Incorrect! The answer was fruit")
     print("Score: ", score)
     print("\n")
 
@@ -149,6 +149,65 @@ else:
 
 #Hard Quiz
 
+answer1_3 = input("What is the weight of a Gold Bar in Fallout: New Vegas? \na. 30g \nb. 50g \nc. 35g \nd. 40g \nAnswer: ")
+if answer1_3 == "c" or answer1_3 == "35g":
+    score += 100
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 100
+    print("Incorrect! The answer was 35g")
+    print("Score: ", score)
+    print("\n")
+
+answer2_3 = input("If you planted the seeds of Quercus robur what would grow? \na. Trees \nb. Fungi \nc. Tomatoes \d. Lemons \nAnswer: ")
+if answer2_3 == "a" or answer2_3 == "Trees" or answer2_3 == "trees":
+    score += 100
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 100
+    print("Incorrect! The answer was trees")
+    print("Score: ", score)
+    print("\n")
+
+answer3_3 = input("On which day did ARPANET suffer a 4 hour long network crash? \na. 28635 \nb. 28521 \nc. 27639 \nd. 29521 \nAnswer: ")
+if answer3_3 == "d" or answer3_3 == "29521":
+    score += 100
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 100
+    print("Incorrect! The answer was 29521")
+    print("Score: ", score)
+    print("\n")
+
+answer4_3 = input("How many protons are in an oxygen atom? \na. 8 \nb. 12 \nc. 6 \nd. 16 \nAnswer: ")
+if answer4_3 == "a" or answer4_3 == "8":
+    score += 100
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 100
+    print("Incorrect! The answer was 8")
+    print("Score: ", score)
+    print("\n")
+
+answer5_3 = input("What animal has the highest metabolism? \na. Octopus \nb. Lizard \nc. Hummingbird \nd. Lion \nAnswer: ")
+if answer5_3 == "c" or answer5_3 == "Hummingbird" or answer5_3 == "hummingbird":
+    score += 100
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 100
+    print("Incorrect! The answer was Hummingbird")
+    print("Score: ", score)
+    print("\n")
 
 
 
