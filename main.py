@@ -60,3 +60,41 @@ else:
     print("Incorrect! The answer is 50m.")
     print("Score: ", score)
     print("\n")
+
+if score <= 0:
+    print("Your final score is:", score, "- You suck!")
+elif score >= 200:
+    print("Your final score is:", score, "- You did alright!")
+else: 
+    print("Your final score is:", score, "- You are the best!")
+
+
+
+#End of easy quiz, insert feedback
+#start of medium quiz (welcome message maybe?)
+
+# Medium Quiz
+answer1_2 = input("True or False? There are 86400 seconds in a day. \na. True \b. False \nAnswer: ")
+if answer1_2 == "True" or answer1_2 == "a" or answer1_2 == "true":
+    score += 100
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 100
+    print("Incorrect! The answer is True.")
+    print("Score: ", score)
+    print("\n")
+
+answer2_2 = input("Which country invented ice cream? \na. Denmark \nb. France \nc. China \d. Japan \nAnswer: ")
+if answer2_2 == "c" or answer2_2 == "China" or answer2_2 == "china":
+    score += 100
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 100
+    print("Incorrect! The answer is China.")
+    print("Score: ", score)
+    print("\n")
+
