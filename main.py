@@ -1,6 +1,11 @@
 score = 0
 
 # Easy Quiz
+# welcome to quiz message
+# Startup screen
+
+
+
 answer1 = input("What US state is Area 51 located in? \na. California \nb. Michigan \nc. Washington D.C \nd. Nevada \nAnswer: ")
 if answer1 == "d" or answer1 == "Nevada":
     score += 100
@@ -62,11 +67,11 @@ else:
     print("\n")
 
 if score <= 0:
-    print("Your final score is:", score, "- You suck!")
+    print("Easy Quiz: Final Score:", score, "- You need more practice")
 elif score >= 200:
-    print("Your final score is:", score, "- You did alright!")
+    print("Easy Quiz: Final Score:", score, "- Not bad")
 else: 
-    print("Your final score is:", score, "- You are the best!")
+    print("Easy Quiz: Final Score:", score, "- You are the best!")
 
 
 
@@ -86,7 +91,7 @@ else:
     print("Score: ", score)
     print("\n")
 
-answer2_2 = input("Which country invented ice cream? \na. Denmark \nb. France \nc. China \d. Japan \nAnswer: ")
+answer2_2 = input("Which country invented ice cream? \na. Denmark \nb. France \nc. China \nd. Japan \nAnswer: ")
 if answer2_2 == "c" or answer2_2 == "China" or answer2_2 == "china":
     score += 100
     print("Correct!")
@@ -97,4 +102,53 @@ else:
     print("Incorrect! The answer is China.")
     print("Score: ", score)
     print("\n")
+
+answer3_2 = input("Which former NBA player was nicknamed Agent Zero? \na. Lebron James \nb. Michael Jordan \nc. Charles Barkley \nd. Gilbert Arenas \nAnswer: ")
+if answer3_2 == "d" or answer3_2 == "Gilbert Arenas" or answer3_2 == "gilbert arenas":
+    score += 100
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 100
+    print("Incorrect! The asnwer was Gilbert Arenas")
+    print("Score: ", score)
+    print("\n")
+
+answer4_2 = input("What tissues connect the muscles to the bones? \na. Tendons \nb. Ligaments \nc. Connective tissue \nd. Fibrous tissue \nAnswer: ")
+if answer4_2 == "a" or answer4_2 == "Tendons" or answer4_2 == "tendons":
+    score += 100
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 100
+    print("Incorrect! The asnwer was Gilbert Arenas")
+    print("Score: ", score)
+    print("\n")
+
+answer5_2 = input("Is an eggplant a fruit or vegetable? \na. Fruit \nb. Vegetable \nAnswer: ")
+if answer5_2 == "a" or  answer5_2 == "fruit" or answer5_2 == "Fruit":
+    score += 100
+    print("Correct!")
+    print("Score: ", score)
+    print("\n")
+else:
+    score -= 100
+    print("Incorrect! The answer is fruit")
+    print("Score: ", score)
+    print("\n")
+
+if score <= 0:
+    print("Current Score: ", score, "- Don't quit your day job")
+elif score >= 200:
+    print("Current Score: ", score, "- Meh")
+else: 
+    print("Current Score", score, "- You rock!")
+
+
+#Hard Quiz
+
+
+
 
