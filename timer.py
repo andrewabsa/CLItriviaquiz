@@ -8,3 +8,5 @@ def countdowntimer():
      print(timer, end="\r")
      time.sleep(1)
      cd-=1
+
+countdowntimer()
