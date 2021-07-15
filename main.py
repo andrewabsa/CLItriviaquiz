@@ -1,4 +1,17 @@
 import os
+import time
+
+# Timer
+
+def countdowntimer():
+    cd = 5
+    while cd:
+     mins = cd // 5
+     secs = cd % 5
+     timer = '{:02d}:{:02d}'.format(mins, secs)
+     print(timer, end="\r")
+     time.sleep(1)
+     cd-=1
 
 
 
@@ -242,8 +255,25 @@ def hard():
         print("Current Score", score, "- You rock!")
 
 
+# Timer
+
+def countdowntimer():
+    cd = 5
+    while cd:
+     mins = cd // 5
+     secs = cd % 5
+     timer = '{:02d}:{:02d}'.format(mins, secs)
+     print(timer, end="\r")
+     time.sleep(1)
+     cd-=1
+
+
+
+
 def time_trial():          
     score = 0
+    print("Get ready...")
+    countdowntimer()
     ans1 = input("1. 8 + 12 = ")
     if ans1 == "20":
         score += 50
@@ -364,6 +394,8 @@ def time_trial():
         print("Score: ", score)
         print("\n")
 
+    
+
 
 def menu():
     print("Welcome to Trivia Quiz - A series of enticing quiz challenges.")
@@ -389,5 +421,4 @@ def menu():
         if quiz_selection == "Time Trial" or quiz_selection == "time trial":
              time_trial()
 menu()
-
 

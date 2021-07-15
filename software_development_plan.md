@@ -17,10 +17,6 @@ E.g. "Sorry that was not one of the options. Please try again."
 **Game modes:** Choose from **Easy**, **Medium**, and **Hard**. 
 Each game mode has unique questions and answers. 
 
-**Short answer**
-Short answer questions will only allow the user to answer in a specific word/term.
-Hints will be provided if the user surpasses a certain number of attempts.
-User must answer short answer questions with a string, the program will throw an error if it receives any other data type as input
 
 **True or False**
 True of False questions will prompt user to enter the answer as "T" for true or "F" for false.
@@ -32,9 +28,8 @@ Error handling will be implemented when user enters an answer that is not "T" or
 **Main Menu**
 will contain instructions on how to play the quiz. And will include a prompt where the user will be able to input their desired name.
 
-A Bonus **Time Trial** Quiz will be timed and tests how fast the user can complete the quiz.
-The bonus quiz will contain a mix of all the styles of questions
-Each speed run attempt will submit final time into the leaderboard with users name
+**Countdown Timer to prepare for quiz**
+Players will be given a countdown timer to prepare for a quiz. Time will countdown in front of them.
 
 ## Intended User Interaction & Experience
 The quiz application is intended to be used as program to test your knowledge.
