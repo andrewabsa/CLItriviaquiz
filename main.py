@@ -1,3 +1,6 @@
+import os
+
+
 
 print("""
 ████████╗██████╗ ██╗██╗   ██╗██╗ █████╗      ██████╗ ██╗   ██╗██╗███████╗
@@ -9,11 +12,6 @@ print("""
 """
 )
      
-
-
-     
-
-
 
 def easy():
     score = 0
@@ -74,10 +72,33 @@ def easy():
         print("\n")
     if score <= 0:
         print("Current Score:", score, "- You need more practice")
+        username = input("Add your name to the leaderboard: ")
+        add_to_leaderboard(username, score)
+        display_leaderboard()
     elif score >= 200:
         print("Current Score:", score, "- Not bad")
+        username = input("Add your name to the leaderboard: ")
+        add_to_leaderboard(username, score)
+        display_leaderboard()
     else: 
         print("Current Score:", score, "- You are the best!")
+        username = input("Add your name to the leaderboard: ")
+        add_to_leaderboard(username, score)
+        display_leaderboard()
+
+#leaderboard
+def add_to_leaderboard(addName, addScore):
+    file = open("score.txt", "a")
+    file.write("\n" + str(addName) + "," + str(addScore))
+    file.close
+
+def display_leaderboard():
+    file = open('score.txt', 'r')
+    file_contents = file.read()
+    print (file_contents)
+    file.close
+    
+
 
 
 def medium():
@@ -368,3 +389,5 @@ def menu():
         if quiz_selection == "Time Trial" or quiz_selection == "time trial":
              time_trial()
 menu()
+
+
