@@ -183,7 +183,6 @@ def medium():
     else: 
         print("Current Score", score, "- You rock!")
 
-
 def hard():
     score = 0
     answer1_3 = input("What is the weight of a Gold Bar in Fallout: New Vegas? \na. 30g \nb. 50g \nc. 35g \nd. 40g \nAnswer: ")
@@ -253,22 +252,6 @@ def hard():
         print("Current Score: ", score, "- Meh")
     else: 
         print("Current Score", score, "- You rock!")
-
-
-# Timer
-
-def countdowntimer():
-    cd = 5
-    while cd:
-     mins = cd // 5
-     secs = cd % 5
-     timer = '{:02d}:{:02d}'.format(mins, secs)
-     print(timer, end="\r")
-     time.sleep(1)
-     cd-=1
-
-
-
 
 def time_trial():          
     score = 0
@@ -393,9 +376,6 @@ def time_trial():
         print("Incorrect! The answer was 3")
         print("Score: ", score)
         print("\n")
-
-    
-
 
 def menu():
     print("Welcome to Trivia Quiz - A series of enticing quiz challenges.")
