@@ -1,8 +1,7 @@
 import os
 import time
 
-# Timer
-
+# CountdownTimer
 def countdowntimer():
     cd = 5
     while cd:
@@ -12,7 +11,6 @@ def countdowntimer():
      print(timer, end="\r")
      time.sleep(1)
      cd-=1
-
 
 print("""
 ████████╗██████╗ ██╗██╗   ██╗██╗ █████╗      ██████╗ ██╗   ██╗██╗███████╗
@@ -28,6 +26,8 @@ print("""
 
 def easy():
     score = 0
+    print("Get ready...")
+    countdowntimer()
     answer1 = input("What US state is Area 51 located in? \na. California \nb. Michigan \nc. Washington D.C \nd. Nevada \nAnswer: ")
     if answer1 == "d" or answer1 == "Nevada":
         score += 100
@@ -88,21 +88,39 @@ def easy():
         username = input("Add your name to the leaderboard: ")
         add_to_leaderboard(username, score)
         display_leaderboard()
+        print()
+        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        if try_menu == "retry" or try_menu == "Retry":
+            retry_1()
+        elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
+            return_menu()
     elif score >= 200:
         print("Current Score:", score, "- Not bad")
         username = input("Add your name to the leaderboard: ")
         add_to_leaderboard(username, score)
         display_leaderboard()
+        print()
+        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        if try_menu == "retry" or try_menu == "Retry":
+            retry_1()
+        elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
+            return_menu()
     else: 
         print("Current Score:", score, "- You are the best!")
         username = input("Add your name to the leaderboard: ")
         add_to_leaderboard(username, score)
         display_leaderboard()
+        print()
+        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        if try_menu == "retry" or try_menu == "Retry":
+            retry_1()
+        elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
+            return_menu()
 
 #leaderboard
 def add_to_leaderboard(addName, addScore):
     file = open("score.txt", "a")
-    file.write("\n" + str(addName) + "," + str(addScore))
+    file.write("\n" + str(addName) + "|" + str(addScore))
     file.close
 
 def display_leaderboard():
@@ -116,6 +134,8 @@ def display_leaderboard():
 
 def medium():
     score = 0
+    print("Get ready...")
+    countdowntimer()
     answer1_2 = input("True or False? There are 86400 seconds in a day. \na. True \nb. False \nAnswer: ")
     if answer1_2 == "True" or answer1_2 == "a" or answer1_2 == "true":
         score += 100
@@ -178,13 +198,45 @@ def medium():
 
     if score <= 0:
         print("Current Score: ", score, "- Don't quit your day job")
+        username = input("Add your name to the leaderboard: ")
+        add_to_leaderboard(username, score)
+        display_leaderboard()
+        print()
+        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        if try_menu == "retry" or try_menu == "Retry":
+            retry_2()
+        elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
+            return_menu()
+
     elif score >= 200:
         print("Current Score: ", score, "- Meh")
+        username = input("Add your name to the leaderboard: ")
+        add_to_leaderboard(username, score)
+        display_leaderboard()
+        print()
+        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        if try_menu == "retry" or try_menu == "Retry":
+            retry_2()
+        elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
+            return_menu()
+
     else: 
         print("Current Score", score, "- You rock!")
+        username = input("Add your name to the leaderboard: ")
+        add_to_leaderboard(username, score)
+        display_leaderboard()
+        print()
+        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        if try_menu == "retry" or try_menu == "Retry":
+            retry_2()
+        elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
+            return_menu()
+
 
 def hard():
     score = 0
+    print("Get ready...")
+    countdowntimer()
     answer1_3 = input("What is the weight of a Gold Bar in Fallout: New Vegas? \na. 30g \nb. 50g \nc. 35g \nd. 40g \nAnswer: ")
     if answer1_3 == "c" or answer1_3 == "35g":
         score += 100
@@ -248,10 +300,40 @@ def hard():
 
     if score <= 0:
         print("Current Score: ", score, "- Don't quit your day job")
+        username = input("Add your name to the leaderboard: ")
+        add_to_leaderboard(username, score)
+        display_leaderboard()
+        print()
+        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        if try_menu == "retry" or try_menu == "Retry":
+            retry_3()
+        elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
+            return_menu()
+
     elif score >= 200:
         print("Current Score: ", score, "- Meh")
+        username = input("Add your name to the leaderboard: ")
+        add_to_leaderboard(username, score)
+        display_leaderboard()
+        print()
+        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        if try_menu == "retry" or try_menu == "Retry":
+            retry_3()
+        elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
+            return_menu()
+
     else: 
         print("Current Score", score, "- You rock!")
+        username = input("Add your name to the leaderboard: ")
+        add_to_leaderboard(username, score)
+        display_leaderboard()
+        print()
+        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        if try_menu == "retry" or try_menu == "Retry":
+            retry_3()
+        elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
+            return_menu()
+
 
 def time_trial():          
     score = 0
@@ -382,11 +464,13 @@ def time_trial():
         username = input("Add your name to the leaderboard: ")
         add_to_leaderboard(username, score)
         display_leaderboard()
-        try_menu = input("Would you like to retry or return to the menu?")
+        print()
+        try_menu = input(f" {username} would you like to retry or return to the menu?")
         if try_menu == "retry" or try_menu == "Retry":
-            retry()
+            retry_4()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
             return_menu()
+
             
         
     elif score >= 200:
@@ -394,21 +478,38 @@ def time_trial():
         username = input("Add your name to the leaderboard: ")
         add_to_leaderboard(username, score)
         display_leaderboard()
-        return_menu()
+        print()
+        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        if try_menu == "retry" or try_menu == "Retry":
+            retry_4()
+        elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
+            return_menu()
+
         
     else: 
         print("Current Score:", score, "- You are the best!")
         username = input("Add your name to the leaderboard: ")
         add_to_leaderboard(username, score)
         display_leaderboard()
-        return_menu()
+        print()
+        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        if try_menu == "retry" or try_menu == "Retry":
+            retry_4()
+        elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
+            return_menu()
+
         
-def retry():
+def retry_4():
     time_trial()
 
+def retry_3():
+    hard()
 
+def retry_2():
+    medium()
 
-
+def retry_1():
+    easy()
 
 def return_menu():
     print("You will be returned to the menu now")
@@ -422,9 +523,6 @@ def return_menu():
 """
 )
     menu()
-
-
-
 
 def menu():
     print("Welcome to Trivia Quiz - A series of enticing quiz challenges.")
