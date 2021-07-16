@@ -14,7 +14,6 @@ def countdowntimer():
      cd-=1
 
 
-
 print("""
 ████████╗██████╗ ██╗██╗   ██╗██╗ █████╗      ██████╗ ██╗   ██╗██╗███████╗
 ╚══██╔══╝██╔══██╗██║██║   ██║██║██╔══██╗    ██╔═══██╗██║   ██║██║╚══███╔╝
@@ -24,6 +23,7 @@ print("""
    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝  ╚═╝╚═╝  ╚═╝     ╚══▀▀═╝  ╚═════╝ ╚═╝╚══════╝
 """
 )
+
      
 
 def easy():
@@ -317,7 +317,7 @@ def time_trial():
         print("Score: ", score)
         print("\n")
 
-    ans6 = input("120-21 = ")
+    ans6 = input("6.120-21 = ")
     if ans6 == "99":
         score += 50 
         print("Correct!")
@@ -329,7 +329,7 @@ def time_trial():
         print("Score: ", score)
         print("\n")
 
-    ans7 = input("18 + 32 = ")
+    ans7 = input("7. 18 + 32 = ")
     if ans7 == 50:
         score += 50
         print("Correct!")
@@ -341,7 +341,7 @@ def time_trial():
         print("Score: ", score)
         print("\n")
 
-    ans8 = input("22 + 10 = ")
+    ans8 = input("8. 22 + 10 = ")
     if ans8 == "32":
         score += 50 
         print("Correct!")
@@ -353,7 +353,7 @@ def time_trial():
         print("Score: ", score)
         print("\n")
 
-    ans9 = input("30 + 40 = ")
+    ans9 = input("9. 30 + 40 = ")
     if ans9 == "70":
         score += 50
         print("Correct!")
@@ -365,7 +365,7 @@ def time_trial():
         print("Score: ", score)
         print("\n")
 
-    ans10 = input("90 / 30")
+    ans10 = input("10. 90 / 30 = ")
     if ans10 == "3":
         score += 50
         print("Correct!")
@@ -376,6 +376,55 @@ def time_trial():
         print("Incorrect! The answer was 3")
         print("Score: ", score)
         print("\n")
+
+    if score <= 0:
+        print("Current Score:", score, "- You need more practice")
+        username = input("Add your name to the leaderboard: ")
+        add_to_leaderboard(username, score)
+        display_leaderboard()
+        try_menu = input("Would you like to retry or return to the menu?")
+        if try_menu == "retry" or try_menu == "Retry":
+            retry()
+        elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
+            return_menu()
+            
+        
+    elif score >= 200:
+        print("Current Score:", score, "- Not bad")
+        username = input("Add your name to the leaderboard: ")
+        add_to_leaderboard(username, score)
+        display_leaderboard()
+        return_menu()
+        
+    else: 
+        print("Current Score:", score, "- You are the best!")
+        username = input("Add your name to the leaderboard: ")
+        add_to_leaderboard(username, score)
+        display_leaderboard()
+        return_menu()
+        
+def retry():
+    time_trial()
+
+
+
+
+
+def return_menu():
+    print("You will be returned to the menu now")
+    print("""
+████████╗██████╗ ██╗██╗   ██╗██╗ █████╗      ██████╗ ██╗   ██╗██╗███████╗
+╚══██╔══╝██╔══██╗██║██║   ██║██║██╔══██╗    ██╔═══██╗██║   ██║██║╚══███╔╝
+   ██║   ██████╔╝██║██║   ██║██║███████║    ██║   ██║██║   ██║██║  ███╔╝ 
+   ██║   ██╔══██╗██║╚██╗ ██╔╝██║██╔══██║    ██║▄▄ ██║██║   ██║██║ ███╔╝  
+   ██║   ██║  ██║██║ ╚████╔╝ ██║██║  ██║    ╚██████╔╝╚██████╔╝██║███████╗
+   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝  ╚═╝╚═╝  ╚═╝     ╚══▀▀═╝  ╚═════╝ ╚═╝╚══════╝
+"""
+)
+    menu()
+
+
+
 
 def menu():
     print("Welcome to Trivia Quiz - A series of enticing quiz challenges.")
@@ -401,4 +450,7 @@ def menu():
         if quiz_selection == "Time Trial" or quiz_selection == "time trial":
              time_trial()
 menu()
+
+
+
 
