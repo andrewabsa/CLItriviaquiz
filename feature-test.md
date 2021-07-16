@@ -23,5 +23,11 @@ The leaderboard feature functions as it should. It successfully adds data to the
 
 ### Feature test #2
 
+### Main Menu: Testing the while loop:
 
+- First tested if the while loop would keep playing the quiz if implemented without a break.
+The expected outcome would most likely result in the quiz being repeated over and over again, until you stop the while loop.
 
+- This time I tried testing it with break inserted after each while loop.
+I would expect the loop to stop once a quiz is finished.
+This resulted in the program being able to stop after completing the quiz instead of repeatedly playing.
