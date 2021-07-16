@@ -1,0 +1,20 @@
+# Help File
+
+### How to run Trivia Quiz:
+
+Python3 or later must be installed.
+You must import the time and os modules.
+
+Run the main python file in your terminal:
+
+"python3 main.py"
+
+Main Menu Features included:
+
+Leaderboard feature adds a viewable Leaderboard which upon receiving user input from the user, saves names and scores into the score.txt file. 
+Name and Score data will then be saved unless manually deleted from the txt file.
+
+The Count-down timer feature gives you a brief moment to get ready for each quiz.
+
+The Main menu feature allows users to navigate into the quiz of their choice by receiving user input.
+User's can also return back to the main menu upon completion of a quiz.
