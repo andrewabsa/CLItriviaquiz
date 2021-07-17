@@ -92,8 +92,8 @@ def easy():
         username = input("Add your name to the leaderboard: ")
         add_to_leaderboard(username, score)
         display_leaderboard()
-        print()
-        try_menu = input(f'{username} would you like to retry or return to the menu: ')
+        print() 
+        try_menu = input("Would you like to retry or return to the menu: ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_1()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -104,7 +104,7 @@ def easy():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        try_menu = input("Would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_1()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -115,7 +115,7 @@ def easy():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        try_menu = input("Would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_1()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -206,7 +206,7 @@ def medium():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu? ")
+        try_menu = input("Would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_2()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -218,7 +218,7 @@ def medium():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu? ")
+        try_menu = input("Would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_2()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -230,7 +230,7 @@ def medium():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu? ")
+        try_menu = input("Would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_2()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -308,7 +308,7 @@ def hard():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu? ")
+        try_menu = input("Would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_3()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -320,7 +320,7 @@ def hard():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu? ")
+        try_menu = input("Would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_3()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -332,7 +332,7 @@ def hard():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu? ")
+        try_menu = input("Would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_3()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -469,7 +469,7 @@ def time_trial():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu? ")
+        try_menu = input("Would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_4()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -483,7 +483,7 @@ def time_trial():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu? ")
+        try_menu = input("would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_4()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -496,7 +496,7 @@ def time_trial():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu? ")
+        try_menu = input("Would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_4()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
