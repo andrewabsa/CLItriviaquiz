@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
+
 import os
 import time
 
@@ -9,7 +12,7 @@ def countdowntimer():
      mins = cd // 4
      secs = cd % 4
      timer = '{:02d}:{:02d}'.format(mins, secs)
-     print(timer, end="\r")
+     print(timer)
      time.sleep(1)
      cd-=1
 
@@ -90,7 +93,7 @@ def easy():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        try_menu = input(f'{username} would you like to retry or return to the menu: ')
         if try_menu == "retry" or try_menu == "Retry":
             retry_1()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":

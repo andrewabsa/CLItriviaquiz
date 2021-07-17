@@ -8,3 +8,5 @@ josh|-300
 min|-300
 no|300
 poop|500
+poo|500
+man|300
