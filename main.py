@@ -3,10 +3,11 @@ import time
 
 # CountdownTimer
 def countdowntimer():
-    cd = 5
+    cd = 4
+    # while loop counts down to zero
     while cd:
-     mins = cd // 5
-     secs = cd % 5
+     mins = cd // 4
+     secs = cd % 4
      timer = '{:02d}:{:02d}'.format(mins, secs)
      print(timer, end="\r")
      time.sleep(1)
@@ -23,7 +24,7 @@ print("""
 )
 
      
-
+# Easy Quiz
 def easy():
     score = 0
     print("Get ready...")
@@ -131,7 +132,7 @@ def display_leaderboard():
     
 
 
-
+# Medium Quiz
 def medium():
     score = 0
     print("Get ready...")
@@ -202,7 +203,7 @@ def medium():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        try_menu = input(f" {username} would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_2()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -214,7 +215,7 @@ def medium():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        try_menu = input(f" {username} would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_2()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -226,13 +227,13 @@ def medium():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        try_menu = input(f" {username} would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_2()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
             return_menu()
 
-
+# Hard Quiz
 def hard():
     score = 0
     print("Get ready...")
@@ -304,7 +305,7 @@ def hard():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        try_menu = input(f" {username} would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_3()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -316,7 +317,7 @@ def hard():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        try_menu = input(f" {username} would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_3()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -328,13 +329,13 @@ def hard():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        try_menu = input(f" {username} would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_3()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
             return_menu()
 
-
+# Time Trial Quiz
 def time_trial():          
     score = 0
     print("Get ready...")
@@ -465,7 +466,7 @@ def time_trial():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        try_menu = input(f" {username} would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_4()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -479,7 +480,7 @@ def time_trial():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        try_menu = input(f" {username} would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_4()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -492,7 +493,7 @@ def time_trial():
         add_to_leaderboard(username, score)
         display_leaderboard()
         print()
-        try_menu = input(f" {username} would you like to retry or return to the menu?")
+        try_menu = input(f" {username} would you like to retry or return to the menu? ")
         if try_menu == "retry" or try_menu == "Retry":
             retry_4()
         elif try_menu == "menu" or try_menu == "Menu" or try_menu == "return to the menu" or try_menu == "return":
@@ -524,6 +525,8 @@ def return_menu():
 )
     menu()
 
+
+# Main menu
 def menu():
     print("Welcome to Trivia Quiz - A series of enticing quiz challenges.")
     print()

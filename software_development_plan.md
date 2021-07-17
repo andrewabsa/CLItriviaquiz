@@ -33,8 +33,6 @@ The **Main Menu** feature can be interacted with at the startup screen. User's w
 The **Countdown Timer** feature will automatically start before the start of each quiz, and will print a message aswell.
 
 
-
-
-
 ### Flow Chart
 
+![Flow Chart](triviaquizzz.png)

@@ -1,4 +1,10 @@
 
-John|500
-John|500
-c|-100
+Pete|300
+Alexander|-300
+poop|100
+e|-500
+meh|500
+josh|-300
+min|-300
+no|300
+poop|500
